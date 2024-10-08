@@ -6,6 +6,7 @@ public class Main {
 
     public static int meanTotalWasteKgPerCapitaPerYear(int[] totalWasteKgPerCapitaPerYear)
     {
+
         return -1;
     }
 
@@ -26,7 +27,15 @@ public class Main {
 
     public static int meanRetailEstimateTonnesPerYear(int[] retailEstimatesTonnesPerYear)
     {
-        return -1;
+        double counter = 0;
+        for (int i : retailEstimatesTonnesPerYear) {
+            counter += i;
+        }
+
+        double mean = counter/retailEstimatesTonnesPerYear.length+0.5;
+        return (int) mean;
+
+
     }
 
     public static int meanFoodServiceEstimateKgPerCapitaPerYear(int[] foodServiceEstimatesKgPerCapitaPerYear)
@@ -160,9 +169,9 @@ public class Main {
      * Misc Methods
      */
 
-    public static String getCountryTotalWastePerYear(String country, String[] countries, int[] totalWasteKgPerCapitaPerYear)
+    public static int getCountryTotalWastePerYear(String country, String[] countries, int[] totalWasteKgPerCapitaPerYear)
     {
-        return "";
+        return -1;
     }
 
     public static String getCountryWithMostWastePerCapita(String[] countries, int[] totalWasteKgPerCapitaPerYear)
